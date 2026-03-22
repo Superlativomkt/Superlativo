@@ -187,8 +187,8 @@
       <div class="fsec">
         <div class="flbl">👤 ¿Quién registra?</div>
         <div class="who-grid">
-          <button class="who-btn active" onclick="setWho(this,'Marco')"><span class="who-name">Marco</span></button>
-          <button class="who-btn" onclick="setWho(this,'Dave')"><span class="who-name">Dave</span></button>
+          <button class="who-btn" onclick="setWho(this,'Marco')"><span class="who-name">Marco</span></button>
+          <button class="who-btn active" onclick="setWho(this,'Dave')"><span class="who-name">Dave</span></button>
         </div>
       </div>
 
@@ -284,9 +284,9 @@
 const API = 'https://script.google.com/macros/s/AKfycbwpkB8sEXVQd7BFiyw1RolxsICI9Hfcrf6ItWQaiXGGF4a_CSWXuocwU_8Iro7HiCN_xQ/exec';
 
 const INCOME_CATS  = ['Promit','Like','Nexa','Google','Prime Center','Bterra','Mailing','CRM','Giny','Finisterra','Lago','Molusk','Otro ingreso'];
-const EXPENSE_CATS = ['Sueldos','Renta oficina','Adobe','ChatGPT','Freepik','Clientify','Internet','CFE / Agua','Caja chica','Comisión banco','Publicidad','Viáticos','Material oficina','Otro gasto'];
+const EXPENSE_CATS = ['Sueldos','Renta','Gastos fijos','Herramientas','Oficina','Caja chica','Compra de equipo','Comisiones','Bonos','Pagos clientes','Otros gastos'];
 
-let cType = 'income', cWho = 'Marco', cCat = '', cFilter = 'todos';
+let cType = 'income', cWho = 'Dave', cCat = '', cFilter = 'todos';
 let isRec = false, recog = null, remoteData = [];
 
 function init() {
